@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>艺术之境 · Art Universe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Playfair+Display:wght@400;700;900&family=Noto+Serif+SC:wght@300;500;700&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Archivo+Black&family=Bebas+Neue&family=Dancing+Script:wght@700&family=Bungee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="mondrian">
+
+<!-- 背景装饰层 -->
+<div class="bg-layer" id="bgLayer"></div>
+<div class="bg-pattern" id="bgPattern"></div>
+
+<!-- 顶部导航 -->
+<header class="topbar">
+  <div class="logo" id="logo">ART · UNIVERSE</div>
+  <nav class="topnav">
+    <a href="#artists">艺术家</a>
+    <a href="#gallery">作品</a>
+    <a href="#about">关于</a>
+  </nav>
+</header>
+
+<!-- 艺术家选择器 -->
+<section class="artist-picker" id="artists">
+  <div class="picker-label">选择一位艺术家，让世界换个样子</div>
+  <div class="artist-grid" id="artistGrid"></div>
+</section>
+
+<!-- Hero 主标题区 -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge" id="heroBadge"><span id="heroLifespan">1872 — 1944</span></div>
+    <div class="hero-eyebrow" id="heroEyebrow">PRESENTING</div>
+    <h1 class="hero-title" id="heroTitle">蒙德里安</h1>
+    <div class="hero-sub"><span id="heroSub">Piet Mondrian · 1872 — 1944 · 荷兰</span><a class="hero-wiki" id="heroWiki" href="https://baike.baidu.com/item/%E5%BD%BC%E5%9F%83%C2%B7%E8%92%99%E5%BE%B7%E9%87%8C%E5%AE%89/3392733" target="_blank" rel="noopener noreferrer">了解更多 →</a></div>
+    <p class="hero-quote" id="heroQuote">"纯粹的艺术，应当来源于纯粹的几何。"</p>
+  </div>
+</section>
+
+<!-- 艺术家介绍 -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="section-kicker" id="aboutKicker">Piet Mondrian</div>
+      <h2 class="section-title" id="aboutTitle">风格解读</h2>
+      <p class="about-body" id="aboutBody"></p>
+    </div>
+    <div class="about-meta">
+      <div class="meta-card">
+        <div class="meta-label">流派</div>
+        <div class="meta-value" id="metaMovement">—</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">关键词</div>
+        <div class="meta-value" id="metaKeywords">—</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">代表作</div>
+        <div class="meta-value" id="metaWork">—</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 作品展示（CSS 艺术复刻）-->
+<section class="gallery" id="gallery">
+  <h2 class="section-title">代表作品 · 风格复刻</h2>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div>艺术之境 · 一个会换装的设计网站</div>
+  <div class="footer-sub">点击上方艺术家头像，体验十二种截然不同的视觉语言 · 前 9 位亦可按数字键切换</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
